@@ -1,0 +1,74 @@
+.gradiente {
+    padding: 20px;
+    /* padding é responsável por definir uma distância interna entre um elemento e sua borda*/
+    background-image: radial-gradient(red, yellow);
+    transition: height 2s, width 1s;
+
+}
+
+.box {
+    border: 1px solid;
+    /* Border é uma propriedade que adiciona um contorno em volta de um elemento HTML*/
+    width: 100px;
+    /* Largura*/
+    height: 100px;
+    /*altura*/
+}
+
+.exemplo {
+    width: 100px;
+    /* Largura*/
+    height: 100px;
+    /*altura*/
+    background-color: yellowgreen;
+    /*define a cor de fundo de um elemento*/
+    animation-name: gangorra;
+    /*Nome da animação*/
+    animation-duration: 1s;
+    /* duração da animação*/
+    animation-iteration-count: infinite;
+    /* tempo que a aminiação será apresentada*/
+    animation-direction: alternate;
+}
+
+@keyframes gangorra {
+    100% {
+        transform: skewY(25deg);
+        /*para deformar objetos no CSS, utilizamos o método skew (distorcer)*/
+    }
+
+}
+
+
+
+.container {
+    margin-top: 50px;
+    /* Margin Top define a distância do elemento para o elemento conseguinte*/
+    border: 1px solid black;
+    /* Border é uma propriedade que adiciona um contorno em volta de um elemento HTML*/
+    width: 100px;
+    /* Largura*/
+    height: 100px;
+    /*altura*/
+}
+
+.container__box {
+    width: 100px;
+    /* Largura*/
+    height: 100px;
+    /*altura*/
+    background-color: yellowgreen;
+    transition: all 3s;
+    /*muda a localização do objeto*/
+}
+
+.container__box:hover {
+    /* Hover é um seletor CSS que usado para aplicar estilos em um link quando o mouse passa por cima dele*/
+    height: 200px;
+    /*altura*/
+    width: 500px;
+    /* Largura*/
+    transform: rotate(180deg);
+    background-color: aqua;
+
+}
